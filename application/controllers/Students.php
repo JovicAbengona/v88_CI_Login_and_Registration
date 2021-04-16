@@ -53,7 +53,7 @@ class Students extends CI_Controller{
 		$this->form_validation->set_rules("confirm_password", "confirm password", "required|matches[password]");
 		
 		$this->form_validation->set_message("required", "%s can't be empty");
-		$this->form_validation->set_message("balid_email", "please enter a valid email");
+		$this->form_validation->set_message("valid_email", "please enter a valid email");
 		$this->form_validation->set_message("is_unique", "this %s is already taken");
 		$this->form_validation->set_message("min_length", "password must be at least 8 characters");
 		$this->form_validation->set_message("matches", "passwords does not match");
